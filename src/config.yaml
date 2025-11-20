@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: AIOS
+  site: 'https://aios-rs.github.io'
   base: '/'
   trailingSlash: false
 
