@@ -11,7 +11,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 const metadata = {
   title: 'Agent Orchestration System Platform - aios-rs',
   ignoreTitleTemplate: true,
-  description: '企业级智能体编排系统平台的演进与架构蓝图，构建AI原生的企业业务系统底座。',
+  description: '企业级智能体系统，构建AI原生的企业业务系统底座。',
 };
 ---
 
@@ -27,7 +27,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      企业级智能体编排系统平台的演进与架构蓝图，构建AI原生的企业业务系统底座。
+      企业级智能体系统，构建AI原生的企业业务系统底座。
     </Fragment>
   </Hero>
 
@@ -35,7 +35,7 @@ const metadata = {
 
   <Note
     title="结论先行"
-    description="业务系统不会消失，但 GUI 的主导性会弱化；AI Native 的低代码/无代码平台将成为企业业务系统的新底座；所有业务系统都要嵌入智能体编排系统平台，而不是与智能体平行存在。"
+    description="业务系统不会消失，但 GUI 的主导性会弱化；AI Native 的低代码/无代码平台将成为企业业务系统的新底座；所有业务系统都要嵌入AgentOS，而不是与智能体平行存在。"
   />
 
   <!-- Content Widget **************** -->
@@ -44,7 +44,11 @@ const metadata = {
     id="architecture"
     isReversed
     tagline="核心架构"
-    title="为什么企业业务系统在智能体时代仍然存在？"
+    title="为什么业务系统在智能体时代仍然存在？"
+    image={{
+      src: '~/assets/images/agentos/bwmdN12Ic2t.png',
+      alt: 'AI Agent and Business System Architecture',
+    }}
   >
     <Fragment slot="content">
       <ul class="space-y-2 mt-4">
@@ -61,6 +65,10 @@ const metadata = {
     id="core-shifts"
     tagline="核心变化"
     title="未来5–10年企业架构的核心变化"
+    image={{
+      src: '~/assets/images/agentos/change.png',
+      alt: 'Enterprise Architecture Evolution',
+    }}
   >
     <Fragment slot="content">
       <div class="text-2xl font-bold mb-2">The Shift： From 'GUI-first' → 'Agent-first + Low-code Backbone'</div>
@@ -82,7 +90,7 @@ const metadata = {
 
   <Features
     tagline="适应策略"
-    title="企业未来的业务系统应该如何 '适应' 智能体编排系统平台？"
+    title="未来的业务系统应该如何 '适应' 智能体平台？"
     items={[
       {
         title: '从 GUI-first → API-first → Agent-first',
@@ -116,7 +124,7 @@ const metadata = {
 
   <Steps
     tagline="最终形态"
-    title="AI Native 的智能体编排系统平台实现路径"
+    title="AI Native 的智能体系统实现路径"
     items={[
       {
         title: '人工操作 → 智能执行',
@@ -134,12 +142,23 @@ const metadata = {
   />
 
   <!-- CallToAction Widget *********** -->
-
   <CallToAction
-    title="开启企业级智能体编排系统平台演进之旅"
-    subtitle="让您的业务系统在智能体时代焕发新生"
-    textButton="立即了解"
-    href="https://github.com/aios-rs/agentos"
-    target="_blank"
-  />
+    actions={[
+      {
+        variant: 'primary',
+        text: '立即了解',
+        href: 'https://github.com/lijingrs/Mozhi',
+        target: '_blank',
+        icon: 'tabler:click',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      <span class="sm:whitespace-nowrap">开启企业级智能体系统演进之旅</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      让您的业务系统在智能体时代焕发新生!
+    </Fragment>
+  </CallToAction>
 </Layout>
